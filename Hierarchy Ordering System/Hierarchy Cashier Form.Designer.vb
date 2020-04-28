@@ -2041,7 +2041,6 @@ Partial Class Hierarchy_Cashier_Form
         Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.hiddenranchpanel)
         Me.Controls.Add(Me.DarkmodePanel)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Location = New System.Drawing.Point(1000, 0)
         Me.MinimumSize = New System.Drawing.Size(1284, 673)
         Me.Name = "Hierarchy_Cashier_Form"

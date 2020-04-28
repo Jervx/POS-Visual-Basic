@@ -1,5 +1,6 @@
 ﻿Public Class Hierarchy_Admin_Form
 
+
     Private Sub Hierarchy_Admin_Form_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'InfoDataSet.info' table. You can move, or remove it, as needed.
         Me.InfoTableAdapter.Fill(Me.InfoDataSet.info)
@@ -177,8 +178,6 @@
 
     Private Sub Button10_Click(sender As System.Object, e As System.EventArgs) Handles Button10.Click
         Form1.Show()
-
-
     End Sub
 
     Private Sub Button7_Click_1(sender As System.Object, e As System.EventArgs) Handles Button7.Click
@@ -275,7 +274,6 @@
 
     Private Sub Button20_Click(sender As System.Object, e As System.EventArgs) Handles Button20.Click
         LoadingForm.Show()
-
         Me.Close()
     End Sub
 

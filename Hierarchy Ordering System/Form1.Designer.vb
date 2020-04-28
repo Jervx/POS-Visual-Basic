@@ -32,13 +32,14 @@ Partial Class Form1
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.Panel37 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(117, 135)
+        Me.TextBox1.Location = New System.Drawing.Point(117, 152)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(301, 32)
         Me.TextBox1.TabIndex = 0
@@ -46,7 +47,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(210, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(210, 29)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(117, 117)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -62,7 +63,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button1.Location = New System.Drawing.Point(53, 173)
+        Me.Button1.Location = New System.Drawing.Point(53, 190)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(191, 49)
         Me.Button1.TabIndex = 2
@@ -75,7 +76,7 @@ Partial Class Form1
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(231, 173)
+        Me.Panel1.Location = New System.Drawing.Point(231, 191)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(13, 49)
         Me.Panel1.TabIndex = 4
@@ -85,7 +86,7 @@ Partial Class Form1
         Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(53, 173)
+        Me.Panel2.Location = New System.Drawing.Point(53, 191)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(13, 49)
         Me.Panel2.TabIndex = 3
@@ -99,7 +100,7 @@ Partial Class Form1
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button7.Location = New System.Drawing.Point(302, 173)
+        Me.Button7.Location = New System.Drawing.Point(302, 190)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(191, 49)
         Me.Button7.TabIndex = 2
@@ -112,7 +113,7 @@ Partial Class Form1
         Me.Panel25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel25.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.Panel25.Location = New System.Drawing.Point(480, 173)
+        Me.Panel25.Location = New System.Drawing.Point(480, 191)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(13, 49)
         Me.Panel25.TabIndex = 4
@@ -122,7 +123,7 @@ Partial Class Form1
         Me.Panel37.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel37.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(206, Byte), Integer))
-        Me.Panel37.Location = New System.Drawing.Point(302, 173)
+        Me.Panel37.Location = New System.Drawing.Point(302, 191)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(13, 49)
         Me.Panel37.TabIndex = 3
@@ -131,12 +132,23 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(237, 243)
+        Me.Label1.Location = New System.Drawing.Point(237, 260)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(90, 13)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Wrong password "
         Me.Label1.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(178, 4)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(185, 20)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Re-Enter Your Password"
         '
         'Form1
         '
@@ -144,6 +156,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(558, 286)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel37)
@@ -170,4 +183,5 @@ Partial Class Form1
     Friend WithEvents Panel25 As System.Windows.Forms.Panel
     Friend WithEvents Panel37 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As Label
 End Class

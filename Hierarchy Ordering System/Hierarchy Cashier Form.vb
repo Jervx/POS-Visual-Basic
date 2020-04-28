@@ -590,13 +590,12 @@
         Dim msg As MsgBoxResult
         msg = MsgBox("Do You Want to Sign Out Fuck?", vbYesNo)
         If msg = vbYes Then
-            Me.Close()
-            CashierSettings.Close()
-            SaleHistory.Close()
-            Adsform.Close()
-            Help.Close()
+            CashierSettings.Hide()
+            SaleHistory.Hide()
+            Adsform.Hide()
+            Help.Hide()
             LoadingForm.Show()
-
+            Me.Close()
         End If
     End Sub
 

@@ -61,9 +61,9 @@ Public Class LoadingForm
         con.Open()
         Dim sdr As OleDbDataReader = cmd.ExecuteReader()
         If (sdr.Read() = True) Then
-            Me.Hide()
             Hierarchy_Cashier_Form.Usname = username.Text
             Hierarchy_Cashier_Form.Show()
+            Me.Close()
         Else
             logininfoerror.Show()
         End If
@@ -78,6 +78,7 @@ Public Class LoadingForm
         Dim sdr As OleDbDataReader = cmd.ExecuteReader()
         If (sdr.Read() = True) Then
             Me.Hide()
+            Hierarchy_Cashier_Form.Usname = username.Text
             Hierarchy_Admin_Form.Show()
         Else
             logininfoerror.Show()

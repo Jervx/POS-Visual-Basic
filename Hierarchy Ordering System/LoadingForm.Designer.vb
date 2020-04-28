@@ -57,7 +57,7 @@ Partial Class LoadingForm
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(618, 675)
+        Me.PictureBox2.Location = New System.Drawing.Point(618, 636)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(30, 29)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -119,7 +119,7 @@ Partial Class LoadingForm
         Me.Panel1.Controls.Add(Me.password)
         Me.Panel1.Controls.Add(Me.username)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Location = New System.Drawing.Point(362, 157)
+        Me.Panel1.Location = New System.Drawing.Point(362, 137)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(570, 602)
         Me.Panel1.TabIndex = 3
@@ -179,13 +179,15 @@ Partial Class LoadingForm
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Crimson
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.ForeColor = System.Drawing.SystemColors.Control
         Me.Button3.Location = New System.Drawing.Point(1194, 12)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(61, 16)
+        Me.Button3.Size = New System.Drawing.Size(61, 26)
         Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Quit"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'LoadingForm
@@ -193,16 +195,14 @@ Partial Class LoadingForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1267, 788)
+        Me.ClientSize = New System.Drawing.Size(1267, 749)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LoadingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
